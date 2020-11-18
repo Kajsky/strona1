@@ -1,0 +1,131 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Konwerter</title>
+    <script src="converterrthjs.js" async></script>
+
+<style>
+    body{
+        margin:0;
+        padding:0;
+        display: block;
+        overflow-y: hidden;
+        font-family: 'Times New Roman';
+    }    
+    #main{
+        border: 1px solid silver;
+        margin: 100px auto;
+        padding: 20px 30px 30px 30px;
+        width: 60%;
+        background-color: whitesmoke;
+    }
+    #main1{
+        border: 1px solid silver;
+        margin: 100px auto;
+        padding: 20px 30px 30px 30px;
+        width: 60%;
+        height: 40px;
+        background-color: whitesmoke;
+        text-align: right;
+    }
+    .contener{
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #text1{
+        text-align: left;
+        font-size: 30px;
+    }
+    #link1{
+        margin-left: 20px;
+    }
+    a{
+        color: salmon;
+    }
+    #copyright{
+        text-align: right;
+    }
+    #colorReview{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid silver;
+        outline: none;
+        margin-top: 7px;
+        width: 100px;
+    }
+    button{
+        width: 170px;
+        height: 50px;
+        border: 1px solid silver;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        background-position: center;
+        transition: background 0.8s;
+
+        margin-top: 10px;
+    }
+
+    button:hover {
+        border: 2px solid silver;
+    }
+    #wynikBox1{
+        width: 170px;
+        height: 30px;
+        color: white;
+        border: 1px solid silver;
+        margin-top: 10px;
+    }
+
+    #wynikes{
+        font-family: Cambria;
+        color: black;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+</style>
+</head>
+
+<body>
+    <div id="main">
+        <p id="text1">Konwerter RGB do HEX</p> 
+        <div class="contener">
+        <div id="colorReview">
+        </div>
+    </div>
+    <div>
+        <input type="number" max="255" min="0" id="inputR"><label> R</label> <br>
+        <input type="number" max="255" min="0" id="inputG"><label> G</label> <br>
+        <input type="number" max="255" min="0" id="inputB"><label> B</label>
+    </div>
+    <div>
+        <button type="button" id="buttonconvert1">Konwertuj</button><br>
+        <div id="wynikBox1">
+            <p id="wynikes"></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" id="closebutton1">Cofnij się do poprzeniej strony</button><br>
+
+    </div>
+    </div>
+
+    <div id="main1"> 
+        <a href="https://www.facebook.com/bury.pies.1" target="blank">Kajsky</a>
+        <a href="https://www.facebook.com/marek.piotrowski.9279" target="blank" id="link1">Marek</a>
+        <p id="copyright">Copyright© 2021</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calculatorjs.js"></script>
+
+    <style>
+
+        ::-webkit-scrollbar {
+            width: 15px;
+            height: 10px;
+            border-radius: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            border-radius: 15px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #9b9b9b; 
+            border-radius: 15px;
+
+            transition: 300ms;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a3a3a3; 
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            display: block;
+            overflow-y: hidden;
+            font-family: 'Times New Roman';
+        }    
+        #main{
+            border: 1px solid silver;
+            margin: 100px auto;
+            padding: 20px 30px 30px 30px;
+            width: 60%;
+            background-color: whitesmoke;
+        }
+        #main1{
+            border: 1px solid silver;
+            margin: 100px auto;
+            padding: 20px 30px 30px 30px;
+            width: 60%;
+            height: 40px;
+            background-color: whitesmoke;
+            text-align: right;
+        }
+        .contener{
+            display:flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        #text1{
+            text-align: left;
+            font-size: 30px;
+        }
+        #link1{
+            margin-left: 20px;
+        }
+        a{
+            color: salmon;
+        }
+        #copyright{
+            text-align: right;
+        }
+        #closebutton1{
+            width: 170px;
+            height: 50px;
+            border: 1px solid silver;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+            background-position: center;
+            transition: background 0.8s;
+
+            margin-top: 10px;
+        }
+
+        #closebutton1:hover {
+            border: 2px solid silver;
+        }
+
+        .buttonNumbers{
+            width: 30px;
+            height: 30px;
+            border: 1px solid silver;
+            outline: none;
+            margin-top: 5px;
+
+            opacity: 1;
+            transition: 300ms;
+        }
+
+        .buttonNumbers:hover{
+            opacity: 0.5;
+        }
+        .buttonNumbers:active{
+            transform: translate(0px, 3px);
+        }
+        .number_buttons{
+            position: relative;
+            max-height: 50px;
+        }
+        .resultBox{
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            border-radius: 2px;
+            text-align: right;
+            overflow-y: auto;
+            overflow-x: none;
+            max-width: 155px;
+            min-height: 20px;
+            padding: 3px 5px;
+        }
+     
+        .resultText{
+            margin: 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p id="text1">Kalkulator</p> 
+        <div class="contener">
+    </div>
+    <div>
+        <div class="resultBox">
+            <p class="resultText">
+                
+            </p>
+        </div>
+        <div class="number_buttons">
+            <button type="button" class="buttonNumbers" data-number="1">1</button>
+            <button type="button" class="buttonNumbers" data-number="2">2</button>
+            <button type="button" class="buttonNumbers" data-number="3">3</button>
+            <button type="button" class="buttonNumbers" data-number="*">*</button>
+            <button type="button" class="buttonNumbers" data-number="c">c</button>
+            <br>
+            <button type="button" class="buttonNumbers" data-number="4">4</button>
+            <button type="button" class="buttonNumbers" data-number="5">5</button>
+            <button type="button" class="buttonNumbers" data-number="6">6</button>
+            <button type="button" class="buttonNumbers" data-number="/">/</button>
+            <button type="button" class="buttonNumbers" data-number="backspace">⟵</button>
+            <br>
+            <button type="button" class="buttonNumbers" data-number="7">7</button>
+            <button type="button" class="buttonNumbers" data-number="8">8</button>
+            <button type="button" class="buttonNumbers" data-number="9">9</button>
+            <button type="button" class="buttonNumbers" data-number=".">,</button>
+            <br>
+            <button type="button" class="buttonNumbers" data-number="0">0</button>
+            <button type="button" class="buttonNumbers" data-number="+">+</button>
+            <button type="button" class="buttonNumbers" data-number="-">-</button>
+            <button type="button" class="buttonNumbers" data-number="=">=</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" id="closebutton1">Cofnij się do poprzeniej strony</button><br>
+    </div>
+</div>
+
+    <div id="main1"> 
+        <a href="https://www.facebook.com/bury.pies.1" target="blank">Kajsky</a>
+        <a href="https://www.facebook.com/marek.piotrowski.9279" target="blank" id="link1">Marek</a>
+        <p id="copyright">Copyright© 2021</p>
+    </div>
+</body>
+</html> 
