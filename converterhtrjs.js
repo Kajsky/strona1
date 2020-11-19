@@ -78,7 +78,7 @@ window.onload = function() {
     }
 
     document.getElementById("closebutton1").onclick = function() {
-        location.href = "menu.html"
+        location.href = "index.html"
     }
 }
     

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultText = document.querySelector(".resultText")
 
     exitbutton.addEventListener("click", e => {
-        location.href = "menu.html"
+        location.href = "index.html"
     })
 
     document.querySelectorAll('.buttonNumbers').forEach((el) => {
